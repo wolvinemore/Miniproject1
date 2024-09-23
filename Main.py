@@ -16,9 +16,10 @@ if not os.path.exists("Charts"):
 
 tickers = (["AAPL","AMZN","V","GME","MSFT"])
 
-#ticker = yf.Ticker(ticker_symbol)
+# Adding Stock data for Mon-Fri Trading days
 for ticker in tickers:
     stock_data = yf.download(ticker, start='2024-09-09', end='2024-09-20')
+
 
     # numpy to give the number of tickers
     a = np.empty(len(tickers))
