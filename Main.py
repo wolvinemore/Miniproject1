@@ -11,10 +11,26 @@ import pandas as pd
 
 # generate market data
 
-ticker = "AAPL"
+tickers = (["AAPL","AMZN","V","GME","MSFT"])
 
 #ticker = yf.Ticker(ticker_symbol)
-stock_data = yf.download(ticker, start='2024-09-09', end='2024-09-20')
+for ticker in tickers:
+    stock_data = yf.download(ticker, start='2024-09-09', end='2024-09-20')
+
+    # numpy to give the number of tickers
+    a = np.empty(len(tickers))
+    b = np.array(stock_data)
+    print(stock_data['Close'])
+
+    # Displays graphs
+    plt.figure(figsize=(18, 6))
+    plt.plot(stock_data['Close'], label='Close Price')
+    plt.title(f'{ticker} Stock Price')
+    plt.xlabel('Date', labelpad = 0)
+    plt.ylabel('closing prices')
+    plt.legend()
+    plt.show()
+
 
 # getting 10days worth of stock market data.
 #hist = ticker.history(period="10d")
@@ -29,13 +45,3 @@ financials = ticker.financials
 rows = len(financials)
 a = np.empty(rows)
 '''
-
-#Display and save Graphs
-
-plt.figure(figsize=(12, 6))
-plt.plot(stock_data['Close'], label='Close Price')
-plt.title('AAPL Stock Price')
-plt.xlabel('Date')
-plt.ylabel('closing prices')
-plt.legend()
-plt.show()
