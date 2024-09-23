@@ -20,7 +20,7 @@ for ticker in tickers:
     # numpy to give the number of tickers
     a = np.empty(len(tickers))
     b = np.array(stock_data)
-    print(stock_data['Close'])
+    print(b)
 
     # Displays graphs
     plt.figure(figsize=(18, 6))
@@ -30,6 +30,7 @@ for ticker in tickers:
     plt.ylabel('closing prices')
     plt.legend()
     plt.show()
+    plt.savefig(f'{ticker}.png')
 
 
 # getting 10days worth of stock market data.
