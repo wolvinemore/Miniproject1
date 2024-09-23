@@ -3,11 +3,14 @@
 ### Miniproject1
 
 #Imports
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 import yfinance as yf
 import pandas as pd
-#import pdb; pdb.set_trace()
+
+if not os.path.exists("Charts"):
+    os.mkdir("Charts")
 
 # generate market data
 
@@ -30,7 +33,7 @@ for ticker in tickers:
     plt.ylabel('closing prices')
     plt.legend()
     plt.show()
-    plt.savefig(f'{ticker}.png')
+    plt.savefig(f'Charts\\{ticker}.png')
 
 
 # getting 10days worth of stock market data.
