@@ -9,11 +9,11 @@ By going to your terminal and running a  py -m pip install yfinance
 
 This project will pull stock info and chart the stocks. 
 
-##Author
+## Author
 
 Kadin Heacock
 
-##Acknowledgments
+## Acknowledgments
 
 [Python Packages](https://packaging.python.org/en/latest/tutorials/installing-packages/)
 [GeeksForGeeks](https://www.geeksforgeeks.org/how-to-use-yfinance-api-with-python/)
