@@ -47,14 +47,12 @@ for ticker in tickers:
         max_price = maxlist[-1]+10
         min_price = maxlist[0]-10
 
-        plt.figure(figsize=(18, 6))
         plt.plot(a, label='Close Price')
         plt.title(f'{ticker} Stock Price')
         plt.xlabel('Dates', labelpad = 0)
         plt.ylabel('Closing prices')
         plt.axis((11, 1, min_price, max_price))
         plt.legend()
-        plt.show()
         plt.savefig(f'Charts\\{ticker}.png')
 
     else:
