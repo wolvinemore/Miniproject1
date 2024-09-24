@@ -1,4 +1,4 @@
-numpy~=2.1.1
-matplotlib~=3.9.2
-yfinance~=0.2.43
+numpy==2.1.1
+matplotlib==3.9.2
+yfinance==0.2.43
 python-dateutil==2.9.0.post0
