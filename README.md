@@ -16,4 +16,5 @@ Kadin Heacock
 ## Acknowledgments
 
 [Python Packages](https://packaging.python.org/en/latest/tutorials/installing-packages/)
+
 [GeeksForGeeks](https://www.geeksforgeeks.org/how-to-use-yfinance-api-with-python/)
