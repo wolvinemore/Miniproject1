@@ -14,7 +14,22 @@ This project will pull stock info and chart the stocks.
 This project's purpose is to demonstrate the ability to pull external data and create 5 graphs using python.
 This data is especially handy when doing long term trading and looking at charts for future investments.
 
-## Executing program
+## Getting Started
+
+### Dependencies
+
+'''
+pip install -r requirements.txt
+'''
+
+### Executing program
+'''
+python main.py
+'''
+
+### Output 
+
+This should create 5 graphs in Charts for each of the 5 stocks
 
 
 ## Author
