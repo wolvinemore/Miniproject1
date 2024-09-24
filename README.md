@@ -9,6 +9,11 @@ By going to your terminal and running a  py -m pip install yfinance
 
 This project will pull stock info and chart the stocks. 
 
+# Description
+
+This project's purpose is to demonstrate the ability to pull external data and create graphs using python.
+This data is especially handy when doing long term trading and looking at charts for future investments.
+
 ## Author
 
 Kadin Heacock
