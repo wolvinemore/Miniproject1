@@ -4,11 +4,9 @@
 
 #Imports
 import os
-import pprint
 import numpy as np
 import matplotlib.pyplot as plt
 import yfinance as yf
-import pandas as pd
 import time
 import copy
 from datetime import datetime, timedelta
@@ -43,7 +41,6 @@ for ticker in tickers:
     if len(last10days) == 10:
         a = np.array(last10days)
         maxlist = copy.copy(a)
-        maxlist.sort()
         max_price = maxlist[-1]+10
         min_price = maxlist[0]-10
 
