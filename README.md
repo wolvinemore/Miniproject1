@@ -18,9 +18,9 @@ This data is especially handy when doing long term trading and looking at charts
 
 ### Dependencies
 
-'''
+```
 pip install -r requirements.txt
-'''
+```
 
 ### Executing program
 '''
