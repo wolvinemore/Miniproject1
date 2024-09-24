@@ -23,9 +23,10 @@ pip install -r requirements.txt
 ```
 
 ### Executing program
-'''
+
+```
 python main.py
-'''
+```
 
 ### Output 
 
