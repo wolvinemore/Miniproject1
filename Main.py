@@ -2,7 +2,7 @@
 ### Kadin Heacock
 ### Miniproject1
 
-#Imports
+#imports
 import os
 import numpy as np
 import matplotlib.pyplot as plt
