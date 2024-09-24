@@ -42,4 +42,4 @@ Kadin Heacock
 
 [GeeksForGeeks](https://www.geeksforgeeks.org/how-to-use-yfinance-api-with-python/)
 
-[pypi](https://pypi.org/project/yfinance/)
+[yfinance](https://pypi.org/project/yfinance/)
