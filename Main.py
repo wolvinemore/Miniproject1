@@ -34,15 +34,13 @@ for ticker in tickers:
 
     # numpy to give the number of tickers
     a = np.array(last10days)
-    b = np.array(data)
 
 
     # Displays graphs
     if len(last10days) == 10:
         a = np.array(last10days)
-        maxlist = copy.copy(a)
-        max_price = maxlist[-1]+10
-        min_price = maxlist[0]-10
+        max_price = a[-1]+10
+        min_price = a[0]-10
 
         plt.plot(a, label='Close Price')
         plt.title(f'{ticker} Stock Price')
